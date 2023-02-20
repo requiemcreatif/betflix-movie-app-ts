@@ -1,0 +1,78 @@
+.hero-wrapper {
+  background: url(../../images/hero-background.svg) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-container {
+    padding: 10rem;
+    max-width: 80rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    img {
+      width: 50rem;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 500;
+      margin: 1.5rem 0;
+      letter-spacing: 0.2rem;
+    }
+
+    h3 {
+      font-size: 1.6rem;
+      font-weight: 300;
+      margin: 1.5rem 0;
+      letter-spacing: 0.1rem;
+    }
+
+    button {
+      background: transparent;
+      border: #7d0323 0.2rem solid;
+      border-radius: 25rem;
+      color: #7d0323;
+      cursor: pointer;
+      font-size: 1.6rem;
+      font-weight: 500;
+      margin-top: 2rem;
+      padding: 1.2rem 2rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-wrapper {
+    .container {
+      grid-template-columns: 1fr;
+    }
+    .hero-container {
+      padding: 5rem;
+      text-align: center;
+      align-items: center;
+      gap: 1rem;
+
+      img {
+        margin-top: 3rem;
+        width: 30rem;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      h3 {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
