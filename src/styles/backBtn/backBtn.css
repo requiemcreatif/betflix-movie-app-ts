@@ -1,5 +1,6 @@
 .back-btn {
-  font-size: 1.5rem;
+  color: #000;
+  font-size: 1.3rem;
   font-weight: 700;
   width: 80px;
   height: 30px;
@@ -16,6 +17,6 @@
   transition: all 0.3s ease-in-out;
 }
 .back-btn:hover {
-  background-color: #000;
+  background-color: #7d0323;
   color: #fff;
 }/*# sourceMappingURL=backBtn.css.map */

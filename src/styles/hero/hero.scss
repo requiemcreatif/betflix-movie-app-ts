@@ -1,3 +1,26 @@
+// Animations
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+// hero styling
 .hero-wrapper {
   background: url(../../images/hero-background.svg) no-repeat center center;
   background-size: cover;
@@ -12,7 +35,7 @@
 
   .hero-container {
     font-family: "Montserrat", sans-serif;
-    padding: 10rem;
+    padding: 15rem 10rem;
     max-width: 80rem;
     color: #fff;
     display: flex;
@@ -21,6 +44,7 @@
 
     img {
       width: 50rem;
+      animation: slide-down 1s ease 0.5s;
     }
 
     h1 {
@@ -28,6 +52,13 @@
       font-weight: 500;
       margin: 1.5rem 0;
       letter-spacing: 0.2rem;
+
+      top: 50%;
+      left: 0;
+      transform: translateX(100%) translateY(-50%);
+      white-space: nowrap;
+      animation: slide-left 1s ease;
+      animation-fill-mode: forwards;
     }
 
     h3 {
@@ -35,6 +66,18 @@
       font-weight: 300;
       margin: 1.5rem 0;
       letter-spacing: 0.1rem;
+      opacity: 0;
+      animation: fade-in 5s ease;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
     }
 
     button {
@@ -47,6 +90,27 @@
       font-weight: 500;
       margin-top: 2rem;
       padding: 1.2rem 2rem;
+    }
+
+    button:hover {
+      animation: shake 0.5s;
+    }
+    @keyframes shake {
+      0% {
+        transform: translateX(0);
+      }
+      25% {
+        transform: translateX(-0.5rem);
+      }
+      50% {
+        transform: translateX(0.5rem);
+      }
+      75% {
+        transform: translateX(-0.5rem);
+      }
+      100% {
+        transform: translateX(0);
+      }
     }
   }
 }
@@ -65,10 +129,12 @@
       img {
         margin-top: 3rem;
         width: 30rem;
+        margin-bottom: 2rem;
       }
 
       h1 {
         font-size: 1.8rem;
+        margin-bottom: 2rem;
       }
 
       h3 {

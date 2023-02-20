@@ -7,7 +7,7 @@ import IntroPage from "./pages/IntroPage/Intro";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<IntroPage />} />

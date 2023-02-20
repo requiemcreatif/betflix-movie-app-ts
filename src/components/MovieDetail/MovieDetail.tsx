@@ -6,6 +6,7 @@ import { RootState } from "../../redux/store";
 import { Movie } from "../../redux/features/movie/movieSlice";
 import BackBtn from "../backButton/BackBtn";
 import Navbar from "../Navbar/Navbar";
+import MovieNotFound from "../MovieNotfound/MovieNotFound";
 interface RouteParams {
   id: string;
   [key: string]: string | undefined;
@@ -18,7 +19,11 @@ const MovieDetail: React.FC = () => {
   );
 
   if (!movie) {
-    return <div>Movie not found!</div>;
+    return (
+      <div>
+        <MovieNotFound />
+      </div>
+    );
   }
 
   const { name, description, genres, rate, length, img } = movie;

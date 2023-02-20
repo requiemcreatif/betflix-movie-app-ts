@@ -4,10 +4,14 @@
   overflow: hidden;
   cursor: pointer;
 }
+.card .card-title {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #ffffff;
 }
 
 .card:hover > .card-header > img {
@@ -34,16 +38,19 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
-  background-color: #ffffff;
+  background-color: #000000;
 }
 .card-footer button {
-  border: none;
+  border: #ffffff solid 1px;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
   background-color: transparent;
   font-size: 1.5rem;
-  color: #000;
+  color: #ffffff;
   cursor: pointer;
   transition: color 0.3s ease-in-out;
 }
 .card-footer button:hover {
   color: #7d0323;
+  border: #7d0323 solid 1px;
 }/*# sourceMappingURL=oneMovie.css.map */

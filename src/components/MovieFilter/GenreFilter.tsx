@@ -16,7 +16,6 @@ const GenreFilter: React.FC = () => {
 
   return (
     <div className="genre-filters">
-      {/* <h2>Filter by Genre:</h2> */}
       <select value={selectedGenre || "all"} onChange={handleGenreSelect}>
         <option value="all">All Genres</option>
         {genres.map((genre) => (

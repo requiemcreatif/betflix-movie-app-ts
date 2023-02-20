@@ -1,16 +1,22 @@
 //Variables
 $primary-color: #ffffff;
+$secondary-color: #000000;
+$tertiary-color: #7d0323;
 
 .card {
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
   overflow: hidden;
   cursor: pointer;
+  .card-title {
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
 }
 
 a {
   text-decoration: none;
-  color: #000;
+  color: $primary-color;
 }
 
 .card:hover > .card-header > img {
@@ -36,18 +42,21 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
-  background-color: $primary-color;
+  background-color: $secondary-color;
 
   button {
-    border: none;
+    border: $primary-color solid 1px;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
     background-color: transparent;
     font-size: 1.5rem;
-    color: #000;
+    color: $primary-color;
     cursor: pointer;
     transition: color 0.3s ease-in-out;
 
     &:hover {
-      color: #7d0323;
+      color: $tertiary-color;
+      border: $tertiary-color solid 1px;
     }
   }
 }

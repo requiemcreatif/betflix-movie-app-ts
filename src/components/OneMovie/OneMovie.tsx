@@ -13,16 +13,7 @@ interface MovieProps {
   img: string;
 }
 
-const OneMovie: React.FC<MovieProps> = ({
-  id,
-  keyId,
-  name,
-  description,
-  genres,
-  rate,
-  length,
-  img,
-}) => {
+const OneMovie: React.FC<MovieProps> = ({ id, keyId, name, img }) => {
   return (
     <article>
       <Link to={`/movie/${id}`} key={keyId}>

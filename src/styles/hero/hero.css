@@ -1,3 +1,39 @@
+@-webkit-keyframes slide-down {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slide-down {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes slide-left {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-left {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 .hero-wrapper {
   background: url(../../images/hero-background.svg) no-repeat center center;
   background-size: cover;
@@ -11,7 +47,7 @@
 }
 .hero-wrapper .hero-container {
   font-family: "Montserrat", sans-serif;
-  padding: 10rem;
+  padding: 15rem 10rem;
   max-width: 80rem;
   color: #fff;
   display: flex;
@@ -20,18 +56,49 @@
 }
 .hero-wrapper .hero-container img {
   width: 50rem;
+  -webkit-animation: slide-down 1s ease 0.5s;
+          animation: slide-down 1s ease 0.5s;
 }
 .hero-wrapper .hero-container h1 {
   font-size: 2.2rem;
   font-weight: 500;
   margin: 1.5rem 0;
   letter-spacing: 0.2rem;
+  top: 50%;
+  left: 0;
+  transform: translateX(100%) translateY(-50%);
+  white-space: nowrap;
+  -webkit-animation: slide-left 1s ease;
+          animation: slide-left 1s ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .hero-wrapper .hero-container h3 {
   font-size: 1.6rem;
   font-weight: 300;
   margin: 1.5rem 0;
   letter-spacing: 0.1rem;
+  opacity: 0;
+  -webkit-animation: fade-in 5s ease;
+          animation: fade-in 5s ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .hero-wrapper .hero-container button {
   background: transparent;
@@ -43,6 +110,44 @@
   font-weight: 500;
   margin-top: 2rem;
   padding: 1.2rem 2rem;
+}
+.hero-wrapper .hero-container button:hover {
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
+}
+@-webkit-keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-0.5rem);
+  }
+  50% {
+    transform: translateX(0.5rem);
+  }
+  75% {
+    transform: translateX(-0.5rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-0.5rem);
+  }
+  50% {
+    transform: translateX(0.5rem);
+  }
+  75% {
+    transform: translateX(-0.5rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @media (max-width: 768px) {
@@ -58,9 +163,11 @@
   .hero-wrapper .hero-container img {
     margin-top: 3rem;
     width: 30rem;
+    margin-bottom: 2rem;
   }
   .hero-wrapper .hero-container h1 {
     font-size: 1.8rem;
+    margin-bottom: 2rem;
   }
   .hero-wrapper .hero-container h3 {
     font-size: 1.4rem;
