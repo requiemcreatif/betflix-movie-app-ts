@@ -12,6 +12,11 @@ header {
   align-items: center;
   padding: 0 6rem;
 }
+@media screen and (max-width: 768px) {
+  .header-container {
+    padding: 0 2rem;
+  }
+}
 
 .nav-link {
   color: #fff;
@@ -20,21 +25,15 @@ header {
   padding: 1rem;
   display: flex;
   gap: 1rem;
+  transition: all 0.3s ease-in-out;
 }
 .nav-link:hover {
   color: #7d0323;
-  transition: all 0.3s ease-in-out;
 }
 .nav-link img {
   width: 25%;
+  transition: all 0.3s ease-in-out;
 }
 .nav-link img:hover {
   transform: scale(1.1);
-  transition: all 0.3s ease-in-out;
-}
-
-@media screen and (max-width: 768px) {
-  .header-container {
-    padding: 0 2rem;
-  }
 }/*# sourceMappingURL=navbar.css.map */

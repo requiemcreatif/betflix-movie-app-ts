@@ -2,16 +2,14 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { setSelectedGenre, genres, Genre } from "../../redux/features/movie/movieSlice";
 import "../../styles/genreFilter/genreFilter.css";
+import { RootState } from "../../redux/store";
 
 const GenreFilter: React.FC = () => {
-  const { selectedGenre } = useSelector(
-    (store: { movie: { selectedGenre: Genre | null } }) => store.movie
-  );
+  const { selectedGenre } = useSelector((store: RootState) => store.movie);
   const dispatch = useDispatch();
 
   const handleGenreSelect = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    const selectedGenre = event.target.value as Genre;
-    dispatch(setSelectedGenre(selectedGenre === "all" ? "all" : selectedGenre));
+    dispatch(setSelectedGenre(event.target.value as Genre));
   };
 
   return (
