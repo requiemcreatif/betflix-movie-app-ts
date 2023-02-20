@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
+import { motion } from "framer-motion";
 import "../../styles/movieDetail/movieDetails.css";
 import { RootState } from "../../redux/store";
 import { Movie } from "../../redux/features/movie/movieSlice";
@@ -33,7 +34,7 @@ const MovieDetail: React.FC = () => {
   return (
     <div>
       <Navbar />
-      <section className="wrapper">
+      <motion.section className="wrapper" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
         <BackBtn />
         <div className="movie-content">
           <div className="image-wrapper">
@@ -49,7 +50,7 @@ const MovieDetail: React.FC = () => {
             <div className="genre-buttons">{genreButtons}</div>
           </div>
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 };

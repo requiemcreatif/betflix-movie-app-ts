@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../styles/oneMovie/oneMovie.css";
+import { motion } from "framer-motion";
 
 interface MovieProps {
   id: number;
@@ -17,15 +18,17 @@ const OneMovie: React.FC<MovieProps> = ({ id, keyId, name, img }) => {
   return (
     <article>
       <Link to={`/movie/${id}`} key={keyId}>
-        <div className="card">
-          <div className="card-header">
-            <img src={img} alt={name} />
+        <motion.div whileHover={{ scale: 1.05 }}>
+          <div className="card">
+            <div className="card-header">
+              <img src={img} alt={name} />
+            </div>
+            <div className="card-footer">
+              <h2 className="card-title">{name}</h2>
+              <button>Read more</button>
+            </div>
           </div>
-          <div className="card-footer">
-            <h2 className="card-title">{name}</h2>
-            <button>Read more</button>
-          </div>
-        </div>
+        </motion.div>
       </Link>
     </article>
   );
