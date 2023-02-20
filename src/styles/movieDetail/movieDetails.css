@@ -19,7 +19,7 @@
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
 }
 .movie-content .movie-footer-content {
-  padding: 2rem;
+  padding: 5rem 2rem 0 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,6 +57,8 @@
   display: flex;
   align-items: center;
   gap: 4rem;
+  font-size: 1.5rem;
+  color: #7d0323;
 }
 
 @media screen and (min-width: 768px) {
@@ -83,9 +85,19 @@
   }
   .movie-content .movie-footer-content {
     padding-top: 1rem;
+    gap: 0rem;
+  }
+  .movie-content .movie-footer-content h1 {
+    font-size: 2.1rem;
+  }
+  .movie-content .movie-footer-content .movie-description {
+    font-size: 1.3rem;
+  }
+  .movie-content .movie-footer-content .genre-buttons {
+    padding-bottom: 2rem;
     gap: 1rem;
   }
-  .rate {
-    padding-bottom: 2rem;
+  .movie-content .movie-footer-content .genre-buttons button {
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=movieDetails.css.map */

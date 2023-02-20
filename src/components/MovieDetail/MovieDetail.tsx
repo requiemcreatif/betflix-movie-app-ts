@@ -41,12 +41,12 @@ const MovieDetail: React.FC = () => {
           </div>
           <div className="movie-footer-content">
             <h1>{name}</h1>
-            <p className="movie-description">{description}</p>
-            <div className="genre-buttons">{genreButtons}</div>
             <div className="rate">
               <p>Rate: {rate}/10</p>
               <p>Length: {length} </p>
             </div>
+            <p className="movie-description">{description}</p>
+            <div className="genre-buttons">{genreButtons}</div>
           </div>
         </div>
       </section>

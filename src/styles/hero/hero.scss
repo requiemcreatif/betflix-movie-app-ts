@@ -25,7 +25,7 @@
   background: url(../../images/hero-background.svg) no-repeat center center;
   background-size: cover;
   height: 100vh;
-  position: relative;
+
   width: 100%;
 
   .container {
@@ -53,8 +53,6 @@
       margin: 1.5rem 0;
       letter-spacing: 0.2rem;
 
-      top: 50%;
-      left: 0;
       transform: translateX(100%) translateY(-50%);
       white-space: nowrap;
       animation: slide-left 1s ease;
@@ -121,6 +119,34 @@
       grid-template-columns: 1fr;
     }
     .hero-container {
+      padding: 7rem 2rem 0 2rem;
+      text-align: center;
+      align-items: center;
+      gap: 1rem;
+
+      img {
+        margin-top: 3rem;
+        width: 30rem;
+        margin-bottom: 2rem;
+      }
+
+      h1 {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+      }
+
+      h3 {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+/*.hero-wrapper {
+    .container {
+      grid-template-columns: 1fr;
+    }
+    .hero-container {
       padding: 5rem;
       text-align: center;
       align-items: center;
@@ -141,5 +167,4 @@
         font-size: 1.4rem;
       }
     }
-  }
-}
+  }*/
