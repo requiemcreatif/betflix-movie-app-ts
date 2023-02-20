@@ -10,7 +10,7 @@ $primary-color: #ffffff;
 
 a {
   text-decoration: none;
-  color: black;
+  color: #000;
 }
 
 .card:hover > .card-header > img {
@@ -47,7 +47,7 @@ a {
     transition: color 0.3s ease-in-out;
 
     &:hover {
-      color: #ff0000;
+      color: #7d0323;
     }
   }
 }

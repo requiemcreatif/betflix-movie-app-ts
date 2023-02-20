@@ -90,7 +90,7 @@ const movieItems = [
   {
     id: 9,
     keyId: "mission-impossible-rogue-nation",
-    name: "Mission: Impossible: Rogue Nation",
+    name: "M-I: Rogue Nation",
     description:
       "Ethan and team take on their most impossible mission yet, eradicating the Syndicate - an International rogue organization as highly skilled as they are, committed to destroying the IMF.",
     genres: ["action", "adventure", "thriller"],

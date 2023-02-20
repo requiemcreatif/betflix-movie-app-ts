@@ -11,12 +11,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 6rem;
-
-  .logo {
-    font-size: 2.4rem;
-    font-weight: 700;
-    color: #fff;
-  }
 }
 
 .nav-link {
@@ -28,8 +22,17 @@ header {
   gap: 1rem;
 
   &:hover {
-    color: red; //need to change for another color
+    color: #7d0323; //need to change for another color
     transition: all 0.3s ease-in-out;
+  }
+
+  img {
+    width: 25%;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: all 0.3s ease-in-out;
+    }
   }
   //transition: all 0.3s ease-in-out;
 }

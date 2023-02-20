@@ -10,6 +10,7 @@
   grid-template-columns: 1fr 1fr;
 }
 .hero-wrapper .hero-container {
+  font-family: "Montserrat", sans-serif;
   padding: 10rem;
   max-width: 80rem;
   color: #fff;

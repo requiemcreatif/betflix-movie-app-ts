@@ -27,14 +27,7 @@ class MovieList extends React.Component<MovieListProps> {
 
     return (
       <main>
-        <div className="intro-text">
-          <p>
-            Welcome to our exciting new movie collection application! We are thrilled to provide you
-            with a unique and user-friendly experience that will take your movie-watching to the
-            next level. We hope you enjoy our app and find it useful in your movie-watching
-            endeavors.
-          </p>
-        </div>
+        <div className="intro-text"></div>
         <div className="top-content">
           <SearchInput />
           <GenreFilter />
