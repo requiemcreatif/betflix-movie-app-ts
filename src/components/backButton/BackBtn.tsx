@@ -6,7 +6,7 @@ import "../../styles/backBtn/backBtn.css";
 const BackBtn: React.FC = () => {
   return (
     <div>
-      <Link to="/">
+      <Link to="/home">
         <div className="back-btn">
           <IoIosArrowBack />
           Back

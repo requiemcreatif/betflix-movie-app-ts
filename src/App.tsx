@@ -3,15 +3,15 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import MovieDetail from "./components/MovieDetail/MovieDetail";
 import "./styles/main/main.scss";
-import Navbar from "./components/Navbar/Navbar";
+import IntroPage from "./pages/IntroPage/Intro";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<IntroPage />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/movie/:id" element={<MovieDetail />} />
         </Routes>
       </BrowserRouter>

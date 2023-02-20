@@ -7,9 +7,11 @@ const Navbar: React.FC = () => {
   return (
     <header>
       <div className="header-container">
-        <h1 className="logo">BetFlix</h1>
+        <NavLink className="nav-link" to="/">
+          <h1 className="logo">BetFlix</h1>
+        </NavLink>
         <nav>
-          <NavLink className="nav-link" to="/">
+          <NavLink className="nav-link" to="/home">
             <span>
               <AiFillHome />
             </span>

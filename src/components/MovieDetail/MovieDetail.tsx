@@ -2,10 +2,10 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import "../../styles/movieDetail/movieDetails.css";
-import BackBtn from "../backButton/BackBtn";
 import { RootState } from "../../redux/store";
 import { Movie } from "../../redux/features/movie/movieSlice";
-
+import BackBtn from "../backButton/BackBtn";
+import Navbar from "../Navbar/Navbar";
 interface RouteParams {
   id: string;
   [key: string]: string | undefined;
@@ -26,23 +26,26 @@ const MovieDetail: React.FC = () => {
   const genreButtons = genres.map((genre) => <button key={genre}>{genre}</button>);
 
   return (
-    <section className="wrapper">
-      <BackBtn />
-      <div className="movie-content">
-        <div className="image-wrapper">
-          <img src={img} alt={name} />
-        </div>
-        <div className="movie-footer-content">
-          <h1>{name}</h1>
-          <p className="movie-description">{description}</p>
-          <div className="genre-buttons">{genreButtons}</div>
-          <div className="rate">
-            <p>Rate: {rate}/10</p>
-            <p>Length: {length} </p>
+    <div>
+      <Navbar />
+      <section className="wrapper">
+        <BackBtn />
+        <div className="movie-content">
+          <div className="image-wrapper">
+            <img src={img} alt={name} />
+          </div>
+          <div className="movie-footer-content">
+            <h1>{name}</h1>
+            <p className="movie-description">{description}</p>
+            <div className="genre-buttons">{genreButtons}</div>
+            <div className="rate">
+              <p>Rate: {rate}/10</p>
+              <p>Length: {length} </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 
