@@ -1,0 +1,21 @@
+.back-btn {
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 80px;
+  height: 30px;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #fff;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.back-btn:hover {
+  background-color: #000;
+  color: #fff;
+}/*# sourceMappingURL=backBtn.css.map */

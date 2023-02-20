@@ -1,0 +1,38 @@
+header {
+  width: 100%;
+  background-color: #000;
+}
+
+.header-container {
+  margin: 0 auto;
+  height: 7rem;
+  max-width: 1500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6rem;
+}
+.header-container .logo {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+.nav-link:hover {
+  color: red;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .header-container {
+    padding: 0 2rem;
+  }
+}/*# sourceMappingURL=navbar.css.map */

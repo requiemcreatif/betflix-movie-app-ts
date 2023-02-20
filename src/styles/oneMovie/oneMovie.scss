@@ -1,0 +1,53 @@
+//Variables
+$primary-color: #ffffff;
+
+.card {
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.card:hover > .card-header > img {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-header {
+  overflow: hidden;
+
+  img {
+    display: block;
+    width: 100%;
+    max-height: 300px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: top;
+  }
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: $primary-color;
+
+  button {
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    color: #000;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: #ff0000;
+    }
+  }
+}
