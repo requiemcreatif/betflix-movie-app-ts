@@ -1,4 +1,4 @@
-export const movieItems = [
+const movieItems = [
   {
     id: 1,
     keyId: "deadpool",
