@@ -1,6 +1,6 @@
 # betflix-movie-app-ts
 
-[betflix-movie](https://betflix-movie-app-ts.vercel.app/)
+[https://betflix-movie-app-ts.vercel.app/](https://betflix-movie-app-ts.vercel.app/)
 The ultimate movie-streaming experience.
 
 Welcome to Betflix ! This is a ReactJS application that allows you to list, search, and view details about specific movies.
