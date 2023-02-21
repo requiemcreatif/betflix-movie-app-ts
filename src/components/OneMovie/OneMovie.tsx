@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../../styles/oneMovie/oneMovie.css";
 import { motion } from "framer-motion";
 
+// Interface for movie properties
 interface MovieProps {
   id: number;
   keyId: string;

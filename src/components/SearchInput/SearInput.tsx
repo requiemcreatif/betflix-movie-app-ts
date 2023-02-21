@@ -7,6 +7,7 @@ const SearchInput: React.FC = () => {
   const { searchQuery } = useSelector((state: { movie: { searchQuery: string } }) => state.movie);
   const dispatch = useDispatch();
 
+  // handler search input
   const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
     dispatch(setSearchQuery(event.target.value.toLowerCase()));
   };

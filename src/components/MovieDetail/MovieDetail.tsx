@@ -1,13 +1,13 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import { motion } from "framer-motion";
 import "../../styles/movieDetail/movieDetails.css";
 import { RootState } from "../../redux/store";
 import { Movie } from "../../redux/features/movie/movieSlice";
 import BackBtn from "../backButton/BackBtn";
 import Navbar from "../Navbar/Navbar";
 import MovieNotFound from "../MovieNotfound/MovieNotFound";
+import { motion } from "framer-motion";
 interface RouteParams {
   id: string;
   [key: string]: string | undefined;

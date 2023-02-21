@@ -1,4 +1,3 @@
-import React from "react";
 import BackBtn from "../backButton/BackBtn";
 import "../../styles/movieNotFound/movieNotFound.css";
 const MovieNotFound = () => {

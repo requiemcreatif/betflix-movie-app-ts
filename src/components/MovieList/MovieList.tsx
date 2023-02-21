@@ -8,6 +8,7 @@ import { Movie } from "../../redux/features/movie/movieSlice";
 import { RootState } from "../../redux/store";
 import { motion } from "framer-motion";
 
+// MovieList component
 interface MovieListProps {
   movieItems: Movie[];
   selectedGenre: string | null;
@@ -17,7 +18,7 @@ interface MovieListProps {
 class MovieList extends React.Component<MovieListProps> {
   render() {
     const { movieItems, selectedGenre, searchQuery } = this.props;
-
+    //Movie filter function
     const filteredMovies = movieItems.filter(
       (movie) =>
         (selectedGenre === null || selectedGenre === "all"
