@@ -17,7 +17,9 @@ Welcome to Betflix ! This is a ReactJS application that allows you to list, sear
 
 The pages have proper URLs and navigation works as expected. You can use the back and forward button of the browser to navigate between pages, and reloading the current page works as expected.
 
-- Home (link to go back to the main page)
+- Main page with Hero + Get Started Button (Link to Home)
+- Home / MovieList (link to go back to the main page)
+- MovieDetails (Details for each movie with back button)
 - Logo (to go back Intro of the app)
 - Custom 404 (No movie found) + back button
 
@@ -28,8 +30,9 @@ The pages have proper URLs and navigation works as expected. You can use the bac
 - ReactJS
   (use of hooks, Class Component and Function Components)
 - React Router Dom
-- Scss (sass lang)
-- Redux Toolkit.
+- Scss (sass lang) [Sass / scss](https://sass-lang.com/)
+- Redux Toolkit. [Redux Toolkit](https://redux-toolkit.js.org/)
+- Framer Motion. [Framer Motion](https://www.framer.com/motion/)
 
 ### Extra Features
 
@@ -42,12 +45,7 @@ The pages have proper URLs and navigation works as expected. You can use the bac
 
 ### To get started, follow these steps:
 
-- Clone this repository to your local machine.
+- Clone this repository to your local machine or download the project from Github.
 - cd betflix-movie-app-ts
 - Run: npm install (to install all the necessary dependencies.)
 - npm start
-
-### Testing
-
-Unit testing has not been implemented yet, but we strongly recommend adding tests to the project to ensure the app is working as expected.
-Modifications
